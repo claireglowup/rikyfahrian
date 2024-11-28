@@ -7,7 +7,7 @@ function App() {
         <div className="container-header">
           <img
             className="profile-pict"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Anne_Hathaway-68211_%28cropped_2%29.jpg/800px-Anne_Hathaway-68211_%28cropped_2%29.jpg"
+            src="https://avatars.githubusercontent.com/u/167708452?s=400&u=2f2540e6d327f1e9fb3316e9aa4310b7c152ae05&v=4"
             alt="profile"
           />
           <div className="title">
