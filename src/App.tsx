@@ -11,11 +11,19 @@ function App() {
             alt="profile"
           />
           <div className="title">
-            <h1 className="hi">Hi, I'am</h1>
             <h1 className="name">Mohamad Riki Fahrian</h1>
-            <h1 className="description">Stay curious. Backend or Frontend ?</h1>
-            <h1 className="description">I love both !</h1>
+            <p className="webdev">Web Developer</p>
+            <h1 className="description">
+              Stay curious. Backend or Frontend? <br />I think i love both!
+            </h1>
+
+            <a href="mailto:rikyfhrian@gmail.com" className="interest">
+              Interested in working together? Email me!
+            </a>
           </div>
+        </div>
+        <div className="latest-project">
+          <h1>Latest Project</h1>
         </div>
       </div>
     </>
