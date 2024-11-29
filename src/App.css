@@ -1,3 +1,4 @@
+/* Default Styles (untuk layar besar dan desktop) */
 body {
   background-color: #eeedea;
 }
@@ -24,6 +25,7 @@ body {
   border: 4px solid #eeedea;
   transition: all 0.5s;
 }
+
 .container-header .profile-pict:hover {
   border: 4px solid #e1ff01;
   cursor: pointer;
@@ -35,18 +37,31 @@ body {
   padding-bottom: 30px;
 }
 
+.container-header .title .name {
+  font-weight: 750;
+  color: rgb(0, 0, 0);
+}
+
 .container-header .title .webdev {
   margin-top: -20px;
   color: rgba(0, 0, 0, 0.534);
 }
 
 .container-header .title .description {
-  font-family: "Baskervvile", serif;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 4.5rem;
   margin-top: -10px;
   color: rgb(0, 0, 0);
   line-height: 70px;
+  margin-bottom: 80px;
+}
+
+.container-header .title .rounded {
+  position: absolute;
+  z-index: 1;
+  top: 213px;
+  right: 620px;
 }
 
 .container-header .title .interest {
@@ -72,12 +87,206 @@ body {
   transition: background-size 0.5s ease;
 }
 
-.container-header .title .name {
-  font-weight: 750;
-  color: rgb(0, 0, 0);
-}
-
 .container-profile .latest-project {
   padding-left: 175px;
   color: rgb(0, 0, 0);
+}
+
+/* project  */
+
+.latest-project .card-cover {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.latest-project .card-cover .card {
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.815);
+}
+
+.latest-project .card-cover .card .flex-link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.latest-project .card-cover .card .flex-link a {
+  border: 1px solid black;
+  align-items: center;
+  align-self: center;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #e1ff01;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.latest-project .card-cover .card .flex-link a:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.latest-project .card-cover .card p {
+  margin-top: -12px;
+}
+
+.latest-project .card-cover .card img {
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.latest-project .card-cover .card .stack {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.latest-project .card-cover .card .stack p {
+  border: 1px solid black;
+  padding-inline: 15px;
+  color: #000000c9;
+  padding-block: 7px;
+  border-radius: 20px;
+  background-color: #e1ff01;
+  font-weight: 750;
+  transition: all 0.3s ease;
+}
+
+.latest-project .card-cover .card .stack p:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* ==============================
+Responsive Design (Media Queries)
+============================== */
+
+/* Untuk perangkat tablet atau lebih kecil (sekitar 768px) */
+
+@media (max-width: 1008px) {
+  .container-profile {
+    margin-top: 30px;
+    width: 90%; /* Mengurangi lebar container */
+    padding: 10px;
+  }
+
+  .container-header .title .description {
+    font-size: 3rem; /* Menurunkan ukuran font pada layar kecil */
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+
+  .container-header .title .rounded {
+    top: 208px;
+    right: 280px;
+    width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .container-profile {
+    margin-top: 30px;
+    width: 90%; /* Mengurangi lebar container */
+    padding: 10px;
+  }
+
+  .container-header {
+    flex-direction: column; /* Ubah menjadi kolom untuk responsif */
+    align-items: center;
+  }
+
+  .container-header .profile-pict {
+    height: 120px;
+    width: 120px;
+    margin-top: 10px;
+    margin-bottom: -30px;
+  }
+
+  .container-header .title .description {
+    font-size: 3rem; /* Menurunkan ukuran font pada layar kecil */
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+
+  .container-header .title .rounded {
+    top: 330px;
+    right: 180px;
+    width: 400px;
+  }
+
+  .container-header .title .interest {
+    font-size: 1rem; /* Menurunkan ukuran font interest */
+    padding: 10px;
+  }
+
+  .container-profile .latest-project {
+    padding: 20px;
+  }
+
+  .latest-project .card-cover .card img {
+    width: 100%; /* Membuat gambar lebih responsif */
+  }
+
+  .latest-project .card-cover .card .stack {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .latest-project .card-cover .card .stack p {
+    padding-inline: 10px; /* Mengurangi padding pada stack items */
+    text-align: center;
+  }
+}
+
+/* Untuk perangkat mobile (sekitar 480px) */
+@media (max-width: 480px) {
+  .container-profile {
+    width: 100%; /* Lebar penuh pada layar sangat kecil */
+    padding: 5px;
+    margin-top: 40px;
+  }
+
+  .container-header .profile-pict {
+    height: 100px;
+    width: 100px;
+  }
+
+  .container-header .title .name {
+    font-size: 1.5rem; /* Mengurangi ukuran font untuk nama */
+  }
+
+  .container-header .title .description {
+    font-size: 2.5rem; /* Mengurangi ukuran font untuk deskripsi */
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .container-header .title .rounded {
+    top: 270px;
+    right: 90px;
+    width: 70%;
+  }
+
+  .latest-project .card-cover .card {
+    width: 100%; /* Membuat kartu penuh */
+    padding: 15px;
+  }
+
+  .latest-project .card-cover .card img {
+    width: 100%; /* Gambar penuh */
+  }
+
+  .latest-project .card-cover .card .flex-link a {
+    padding: 8px; /* Mengurangi padding pada icon */
+  }
+
+  .latest-project .card-cover .card .stack p {
+    padding-inline: 8px; /* Mengurangi padding pada stack */
+    text-align: center;
+  }
 }

@@ -1,4 +1,6 @@
 import "./App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
@@ -16,14 +18,32 @@ function App() {
             <h1 className="description">
               Stay curious. Backend or Frontend? <br />I think i love both!
             </h1>
-
+            <img src="/arrow.png" alt="ya" className="rounded" />
             <a href="mailto:rikyfhrian@gmail.com" className="interest">
               Interested in working together? Email me!
             </a>
           </div>
         </div>
         <div className="latest-project">
-          <h1>Latest Project</h1>
+          <h1 className="header-lp">Latest Project 📂</h1>
+          <div className="card-cover">
+            <div className="card">
+              <div className="flex-link">
+                <h2 className="title-card">Type of Skater</h2>
+                <a href="https://typeofskater.vercel.app" target="blank">
+                  <FontAwesomeIcon icon={faLink} />
+                </a>
+              </div>
+              <p className="description-card">
+                Website for looking skater style
+              </p>
+              <img src="/type.PNG" alt="skater web" />
+              <div className="stack">
+                <p>React</p>
+                <p>TypeScript</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
