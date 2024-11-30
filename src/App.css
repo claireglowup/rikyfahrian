@@ -1,18 +1,19 @@
 /* Default Styles (untuk layar besar dan desktop) */
 body {
   background-color: #eeedea;
+  font-family: "Inter", sans-serif;
 }
 
 .container-profile {
   margin: auto;
   width: 1000px;
   padding: 20px;
-  font-family: "Inter", sans-serif;
 }
 
 .container-profile .container-header {
   display: flex;
   gap: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.377);
 }
 
 .container-header .profile-pict {
@@ -33,7 +34,6 @@ body {
 
 .container-header .title {
   margin-top: 30px;
-  border-bottom: 1px solid black;
   padding-bottom: 30px;
 }
 
@@ -74,29 +74,32 @@ body {
   text-decoration: none;
   border: 1px solid black;
   transition: all 0.5s ease;
-  background: linear-gradient(to top, black, black) no-repeat;
-  background-size: 100% 0%; /* Awalnya background gradien 0% (tidak terlihat) */
-  background-position: bottom;
+  display: inline-block;
 }
 
 .container-header .title .interest:hover {
-  color: white;
   background-color: black;
-  background: linear-gradient(to top, black, black) no-repeat;
-  background-size: 100% 100%; /* Saat hover, background gradien akan penuh */
-  transition: background-size 0.5s ease;
-}
-
-.container-profile .latest-project {
-  padding-left: 175px;
-  color: rgb(0, 0, 0);
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* project  */
 
+.latest-project {
+  width: 1000px;
+  margin: auto;
+}
+
+.latest-project .header-lp {
+  padding-left: 50px;
+}
+
 .latest-project .card-cover {
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
 .latest-project .card-cover .card {
@@ -187,6 +190,14 @@ Responsive Design (Media Queries)
     top: 208px;
     right: 280px;
     width: 400px;
+  }
+
+  .latest-project {
+    width: 90%;
+  }
+
+  .latest-project .card-cover {
+    gap: 30px;
   }
 }
 @media (max-width: 768px) {

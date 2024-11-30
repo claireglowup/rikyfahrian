@@ -24,24 +24,36 @@ function App() {
             </a>
           </div>
         </div>
-        <div className="latest-project">
-          <h1 className="header-lp">Latest Project 📂</h1>
-          <div className="card-cover">
-            <div className="card">
-              <div className="flex-link">
-                <h2 className="title-card">Type of Skater</h2>
-                <a href="https://typeofskater.vercel.app" target="blank">
-                  <FontAwesomeIcon icon={faLink} />
-                </a>
-              </div>
-              <p className="description-card">
-                Website for looking skater style
-              </p>
-              <img src="/type.PNG" alt="skater web" />
-              <div className="stack">
-                <p>React</p>
-                <p>TypeScript</p>
-              </div>
+      </div>
+      <div className="latest-project">
+        <h1 className="header-lp">Latest Project 📂</h1>
+        <div className="card-cover">
+          <div className="card">
+            <div className="flex-link">
+              <h2 className="title-card">Type of Skater</h2>
+              <a href="https://typeofskater.vercel.app" target="blank">
+                <FontAwesomeIcon icon={faLink} />
+              </a>
+            </div>
+            <p className="description-card">Website for looking skater style</p>
+            <img src="/type.PNG" alt="skater web" />
+            <div className="stack">
+              <p>React</p>
+              <p>TypeScript</p>
+            </div>
+          </div>
+          <div className="card">
+            <div className="flex-link">
+              <h2 className="title-card">Type of Skater</h2>
+              <a href="https://typeofskater.vercel.app" target="blank">
+                <FontAwesomeIcon icon={faLink} />
+              </a>
+            </div>
+            <p className="description-card">Website for looking skater style</p>
+            <img src="/type.PNG" alt="skater web" />
+            <div className="stack">
+              <p>React</p>
+              <p>TypeScript</p>
             </div>
           </div>
         </div>
