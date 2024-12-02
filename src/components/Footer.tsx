@@ -4,6 +4,7 @@ import {
   faInstagram,
   faYoutube,
   faLinkedin,
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
@@ -14,8 +15,8 @@ export function Footer() {
         <a href="https://instagram.com/rikyfahrian" target="blank">
           <FontAwesomeIcon icon={faInstagram} />
         </a>
-        <a href="https://youtube.com/rikyfahrian" target="blank">
-          <FontAwesomeIcon icon={faYoutube} />
+        <a href="https://github.com/claireglowup" target="blank">
+          <FontAwesomeIcon icon={faGithub} />
         </a>
         <a href="https://linkedin.com/in/rikyfahrian" target="blank">
           <FontAwesomeIcon icon={faLinkedin} />
