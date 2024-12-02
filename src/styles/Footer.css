@@ -1,0 +1,20 @@
+.footer {
+  margin-top: 90px;
+  text-align: center;
+}
+
+.footer .icon {
+  padding: 20px;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.footer .icon a {
+  color: rgba(0, 0, 0, 0.589);
+}
+
+.footer p {
+  color: rgba(0, 0, 0, 0.521);
+}
