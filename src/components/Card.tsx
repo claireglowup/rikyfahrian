@@ -1,21 +1,36 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 
-export function Card() {
+interface CardProps {
+  titleCart: string;
+  link: string;
+  description: string;
+  img: string;
+  stack: string[];
+}
+
+export const Card: React.FC<CardProps> = ({
+  titleCart,
+  link,
+  description,
+  img,
+  stack,
+}) => {
   return (
     <div className="card">
       <div className="flex-link">
-        <h2 className="title-card">Type of Skater</h2>
-        <a href="https://typeofskater.vercel.app" target="blank">
+        <h2 className="title-card">{titleCart}</h2>
+        <a href={link} target="blank">
           <FontAwesomeIcon icon={faLink} />
         </a>
       </div>
-      <p className="description-card">Website for looking skater style</p>
-      <img src="/type.PNG" alt="skater web" />
+      <p className="description-card">{description}</p>
+      <img src={img} alt={titleCart} />
       <div className="stack">
-        <p>React</p>
-        <p>TypeScript</p>
+        {stack.map((s) => (
+          <p>{s}</p>
+        ))}
       </div>
     </div>
   );
-}
+};

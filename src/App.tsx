@@ -1,17 +1,15 @@
 import "./styles/App.css";
 
 import { Header } from "./components/Header";
-import { Project } from "./components/Project";
+import { ProjectCard } from "./components/Project";
 import { Footer } from "./components/Footer";
 
-function App() {
+export function App() {
   return (
     <>
       <Header />
-      <Project />
+      <ProjectCard />
       <Footer />
     </>
   );
 }
-
-export default App;

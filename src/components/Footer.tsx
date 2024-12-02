@@ -2,7 +2,6 @@ import "../styles/Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
-  faYoutube,
   faLinkedin,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
