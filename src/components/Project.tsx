@@ -1,6 +1,7 @@
 import { CardDataInterface, getDataProject } from "../util/data";
 import { Card } from "./Card";
 
+//project card
 export const ProjectCard = () => {
   const dataProjectCard: CardDataInterface[] = getDataProject();
 
