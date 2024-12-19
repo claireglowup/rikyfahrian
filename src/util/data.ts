@@ -18,14 +18,14 @@ export const getDataProject = (): CardDataInterface[] => [
   {
     titleCard: "CatatanMu",
     link: "https://catatanmu-byr.vercel.app",
-    description: "Make a simple notes for a while",
+    description: "Make a simple notes",
     img: "/catatanmu.png",
     stack: ["React", "JavaScript", "Vite"],
   },
   {
-    titleCard: "Puton Ecommerce",
+    titleCard: "Puton E-commerce",
     link: "https://puton-thrift.vercel.app",
-    description: "Thrift store for my own thrift shop(ongoing development)",
+    description: "Thrift store (ongoing development)",
     img: "/puton.PNG",
     stack: ["React", "TypeScript", "Vite"],
   },

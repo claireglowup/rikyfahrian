@@ -25,7 +25,7 @@ export const Card: React.FC<CardProps> = ({
         </a>
       </div>
       <p className="description-card">{description}</p>
-      <img src={img} alt={titleCart} />
+      <img src={img} alt={titleCart} height={210} />
       <div className="stack">
         {stack.map((s) => (
           <p>{s}</p>
