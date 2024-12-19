@@ -1,3 +1,5 @@
+/** @format */
+
 export const getDataProject = (): CardDataInterface[] => [
   {
     titleCard: "Type of Skater",
@@ -12,6 +14,13 @@ export const getDataProject = (): CardDataInterface[] => [
     description: "Rest API cart ecommerce with sandbox midtrans",
     img: "/ds.jpg",
     stack: ["Go", "Echo", "PostgreSQL"],
+  },
+  {
+    titleCard: "CatatanMu",
+    link: "https://catatanmu-byr.vercel.app",
+    description: "Website untuk menyimpan catatan sementara",
+    img: "/catatanmu.png",
+    stack: ["React", "JavaScript", "Vite"],
   },
 ];
 
