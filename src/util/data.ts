@@ -25,7 +25,7 @@ export const getDataProject = (): CardDataInterface[] => [
   {
     titleCard: "Puton E-commerce",
     link: "https://puton-thrift.vercel.app",
-    description: "Thrift store (ongoing development)",
+    description: "Thrift store (WIP)",
     img: "/puton.PNG",
     stack: ["React", "TypeScript", "Vite"],
   },
