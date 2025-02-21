@@ -9,6 +9,13 @@ export const getDataProject = (): CardDataInterface[] => [
     stack: ["React", "TypeScript", "Vite"],
   },
   {
+    titleCard: "Terminal with LLM",
+    link: "https://rikyfahrian-zsh.vercel.app",
+    description: "Try and ask about me!",
+    img: "/zsh.png",
+    stack: ["Astro", "TypeScript"],
+  },
+  {
     titleCard: "Type of Skater",
     link: "https://typeofskater.vercel.app",
     description: "Website for looking skater style",
