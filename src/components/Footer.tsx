@@ -1,10 +1,8 @@
+/** @format */
+
 import "../styles/Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faInstagram,
-  faLinkedin,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export function Footer() {
@@ -24,7 +22,7 @@ export function Footer() {
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
       </div>
-      <p>© 2024 Mohamad Riki Fahrian, All Rights Reserved</p>
+      <p>© 2025 Mohamad Riki Fahrian</p>
     </div>
   );
 }
